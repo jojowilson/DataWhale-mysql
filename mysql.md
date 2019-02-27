@@ -8,6 +8,17 @@
 
 [参考链接](http://www.runoob.com/mysql/mysql-install.html)<br>
 
+安装Navicat时出现的1251错误
+===
+解决方法
+---
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER; #修改加密规则 （这行我没有写，不过貌似也可以）<br>
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; #更新一下用户的密码<br> 
+
+FLUSH PRIVILEGES; #刷新权限<br>
+
+
 数据库的基础知识
 ===
 首先数据库通俗的理解就是一个存放数据的柜子，你可以和它适当的沟通取出你想要的信息。<br>
