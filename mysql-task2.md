@@ -13,5 +13,5 @@ FROM Products;
 检索所有列
 ---
 SELECT * 
-FROM Products;
+FROM Products;<br>
 *注意检索出来的记录都是无序排列的*
