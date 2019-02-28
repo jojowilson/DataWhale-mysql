@@ -26,9 +26,9 @@ WHERE prod_price = 3.49;
 排序行数 orderby
 ===
 SELECT prod_name <br>
-FROM Products
-ORDERBY
-prod_name;
+FROM Products<br>
+ORDERBY<br>
+prod_name;<br>
 
 函数
 ===
@@ -39,42 +39,42 @@ prod_name;
 task1 查找重复邮箱
 ---
 -- 创建表
-CREATE TABLE email (
-ID INT NOT NULL PRIMARY KEY,
-Email VARCHAR(255)
-)
+CREATE TABLE email (<br>
+ID INT NOT NULL PRIMARY KEY,<br>
+Email VARCHAR(255)<br>
+)<br>
 
--- 插入数据
-INSERT INTO email VALUES('1','a@b.com');
-INSERT INTO email VALUES('2','c@d.com');
-INSERT INTO email VALUES('3','a@b.com');
+-- 插入数据<br>
+INSERT INTO email VALUES('1','a@b.com');<br>
+INSERT INTO email VALUES('2','c@d.com');<br>
+INSERT INTO email VALUES('3','a@b.com');<br>
 
----查找重复邮箱
-SELECT DISTINCE Email
-FROM email;
+---查找重复邮箱<br>
+SELECT DISTINCE Email<br>
+FROM email;<br>
 
 
 task2 查找大国
 ---
--- 创建表
-CREATE TABLE World (
-name VARCHAR(50) NOT NULL,
-continent VARCHAR(50) NOT NULL,
-area INT NOT NULL,
-population INT NOT NULL,
-gdp INT NOT NULL
-);
+-- 创建表<br>
+CREATE TABLE World (<br>
+name VARCHAR(50) NOT NULL,<br>
+continent VARCHAR(50) NOT NULL,<br>
+area INT NOT NULL,<br>
+population INT NOT NULL,<br>
+gdp INT NOT NULL<br>
+);<br>
 
 
--- 插入数据
-INSERT INTO World VALUES( 'Afghanistan', 'Asia',652230,25500100,20343000);
-INSERT INTO World VALUES( 'Albania', 'Europe' ,28748,2831741,12960000);
-INSERT INTO World VALUES( 'Algeria', 'Africa' ,2381741,37100000,188681000);
-INSERT INTO World VALUES( 'Andorra' , 'Europe' ,468,78115,3712000);
-INSERT INTO World VALUES( 'Angola' , 'Africa' ,1246700,20609294,100990000);
+-- 插入数据<br>
+INSERT INTO World VALUES( 'Afghanistan', 'Asia',652230,25500100,20343000);<br>
+INSERT INTO World VALUES( 'Albania', 'Europe' ,28748,2831741,12960000);<br>
+INSERT INTO World VALUES( 'Algeria', 'Africa' ,2381741,37100000,188681000);<br>
+INSERT INTO World VALUES( 'Andorra' , 'Europe' ,468,78115,3712000);<br>
+INSERT INTO World VALUES( 'Angola' , 'Africa' ,1246700,20609294,100990000);<br>
 
----查找大国
-SELECT name, area, population
-FROM World
-WHERE area >= 3000000 
-OR (population > 25000000 AND gdp > 20000000);
+---查找大国<br>
+SELECT name, area, population<br>
+FROM World<br>
+WHERE area >= 3000000 <br>
+OR (population > 25000000 AND gdp > 20000000);<br>
